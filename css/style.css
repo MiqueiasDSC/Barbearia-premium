@@ -1,0 +1,461 @@
+*{
+    font-family: 'Poppins';
+}
+body{
+   height: 100%; 
+}
+.cabecalho{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Outfit", sans-serif;
+    height: 100px;
+    position: absolute;
+}
+.cabecalho .imagem-logo{
+    scale: 420%;
+    width: 60px; 
+    transition: 0.3s ease-in-out;
+}
+.cabecalho .imagem-logo:hover{
+    transform: scale(1.1);
+}
+.cabecalho .nome-barbearia{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+.cabecalho .logo{
+    display: flex;
+    align-items: center;
+}
+.cabecalho .lista-cabecalho{
+    display: flex;
+    gap: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cabecalho .botao-agendamento{
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgba(148,20,213,1);
+    color: white;
+    font-family: "Outfit", sans-serif;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    font-size: 14px;
+}
+.cabecalho .botao-agendamento:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background: #cb14d5; 
+}
+.container-topo{
+    top: 0;
+    z-index: -1;
+    background-image: url(main-back.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container-topo .main-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    color: white;
+    width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+}
+.container-topo .main-info .botoes{
+    width: 320px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-topo .botoes-redes{
+    display: flex;
+    justify-content: space-between;
+}
+.container-topo .botoes-redes li{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-topo .botoes-redes li a{
+    width: 50px;
+    height: 50px;
+    border: solid 0.1px rgba(220, 3, 236, 0.843);
+    border-radius: 12px;
+    background-color: rgba(109, 14, 104, 0.333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.container-topo .botoes-redes li a:hover{
+    transform: scale(1.1);
+    background-color: #9e12a663;
+}
+.container-topo .botoes-redes li a i{
+    color: white;
+    font-size: 22px;
+}
+.container-topo .main-info h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+.container-topo .main-info p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.container-topo .introducao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.container-topo .botoes-info{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.container-topo .botoes-info button{
+    width: 180px;
+    border: solid 0px;
+    border-radius: 6px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.container-topo .botoes-info .botao-1{
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+.container-topo .botoes-info .botao-1:hover{
+    transform: scale(1.1);
+    background-color: #9915a0;
+    color: white;
+    
+}
+.container-topo .botoes-info .botao-2{
+    background-color: rgb(162, 18, 223);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.container-topo .botoes-info .botao-2:hover{
+    transform: scale(1.1);
+    background-color: rgb(249, 27, 238);
+    color: rgb(255, 255, 255);
+}
+
+/* Segunda parte */
+
+.secao-servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(26, 1, 25);
+    padding-bottom: 80px;
+}
+.secao-servicos .logo-servicos{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 25px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 0, 247, 0.568);
+    transition: 0.3s ease-in-out;
+}
+.secao-servicos .logo-servicos:hover{
+    transform: scale(1.1);
+}
+.secao-servicos li{
+    margin-top: 30px;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(67, 179, 26);
+    list-style-type: disc;
+}
+.secao-servicos h2{
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 35px;
+    color: white;
+}
+.blocos-servicos{
+    display: grid;
+    padding: 10px;
+    grid-gap: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    width: 1600px;
+}
+.container-servico i{
+    width: 100%;
+    height: 120px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(67, 179, 26);
+}
+.container-servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    height: 360px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 19px;
+    box-shadow: 0px 0px 10px 5px rgb(255, 0, 247);
+    transition: 0.3s ease-in-out;
+    background-color: rgb(232, 211, 228) ;
+}
+.container-servico:hover{
+    transform: scale(1.03);
+}
+.container-servico h3{
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.container-servico p{
+    font-family: "Outfit", sans-serif;
+    margin: 10px;
+}
+.container-servico button{
+    width: 180px;
+    height: 50px;
+    background-color: rgb(162, 18, 223);
+    color: white;
+    border: solid 0px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* Terceira parte */
+.secao-assinatura{
+    background-color: rgb(17, 1, 17);
+    display: flex;
+    padding: 20px;
+    height: 780px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.secao-assinatura .info-assinatura{
+    width: 1400px;
+    margin-left: 100px;
+    line-height: 40px;
+}
+.secao-assinatura li{
+    font-family: "Outfit", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(67, 179, 26);
+    margin: 32px;
+    list-style-type: disc;
+}
+.secao-assinatura p{
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    text-align: start;
+    margin: 32px;
+   
+}
+.secao-assinatura .fotos-assinatura{
+    margin-top: 180px;
+    width: 1100px;
+    height: 400px;
+    display: flex;
+    gap: 35px;
+}
+.secao-assinatura .imagem-assinatura{
+    box-shadow: -2px 1px 33px 6px rgba(181, 4, 157, 0.611);
+    border-radius: 23px;
+}
+.secao-assinatura .fotos-assinatura .imagem-assinatura-1{
+    transform: translateY(-50%);
+}
+.secao-assinatura .fotos-assinatura .imagem-assinatura-2{
+    height: 430px;
+    width: 390px;
+}
+
+/* Quarta parte */
+
+.bloco-carrosel{
+    background-color: rgb(26, 1, 25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+}
+.bloco-carrosel li{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(67, 179, 26);
+    list-style-type: disc; 
+}
+.bloco-carrosel h2{
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 35px;
+    color: white;
+}
+.bloco-carrosel .container-carrosel{
+    align-items: center;
+    display: flex;
+    height: 800px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    margin-top: 60px;
+}
+.imagem-carrosel{
+    height: 750px;
+    width: 560px;
+    opacity: 0;
+    z-index: 0;
+    border-radius: 25px;
+    background-size: contain;
+}
+.imagem-carrosel-1{
+    left: 5%;
+    opacity: .4;
+    transform: translateX(-100%);
+    width: 200px;
+}
+.imagem-carrosel-2, .imagem-carrosel-4{
+    height: 800px;
+    opacity: 0.8;
+    width: 380px;
+    z-index: 1;
+}
+.imagem-carrosel-2{
+    left: 30%;
+    transform: translateX(-70%);
+}
+.imagem-carrosel-3{
+    box-shadow: -2px 5px 33px 6px rgba(181, 4, 157, 0.611);
+    height: 900px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-65%);
+    z-index: 2;
+    width: 600px;
+}
+.imagem-carrosel-4{
+    left: 70%;
+    transform: translateX(-120%);
+    opacity: 0.8;
+}
+.imagem-carrosel-5{
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-250%);
+    width: 230px;
+}
+
+/* Quinta parte */
+.footer{
+    display: flex;
+    height: 240px;
+    align-items: start;
+    line-height: 35px;
+    padding-top: 60px;
+    background-color: #5b085f;
+    color: aliceblue;
+}
+.footer .logo-footer{
+    width: 280px;
+    margin-left: 60px;
+    margin-top: -100px;
+}
+.info-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.footer .redes-sociais h3{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.footer .redes-sociais .botoes-redes{
+    display: flex;
+    gap: 15px;
+    font-size: 29px;
+}
+.footer .info-comunidade h3{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.footer .info-comunidade ul{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+.footer .compania h3{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.footer .compania ul{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+.footer .info-barbearia h3{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.footer .info-barbearia ul{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* Animação de Texto */
+.container-topo .animate{
+    transition: 1s;
+}
+.container-topo .animate{
+    transform: translateX(-100%);
+}
+.container-topo .show-animate{
+    transform: translateX(0);
+}
+.secao-assinatura .animate{
+    transition: 1s;
+}
+.secao-assinatura .animate{
+    transform: translateX(-100%);
+}
+.secao-assinatura .show-animate{   
+    transform: translateX(0);
+}
